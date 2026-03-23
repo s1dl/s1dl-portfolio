@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>S1dl portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul> 
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#content-form">Content</a></li>
+        </ul>
+    </nav>
+    
+    <main id="about">
+    <div class="space">
+        <div class="earth"></div>
+        <div class="orbit">
+            <div class="moon"></div>
+        </div>
+    </div>
+    <div class="intro-section">
+        <div class="typing-title">I am <span>s1dl</span></div>
+        
+        <div class="skills-container">
+            <div class="skill-square">HTML</div>
+            <div class="skill-square">CSS</div>
+            <div class="skill-square">UX</div>
+            <div class="skill-square">UI</div>
+        </div>
+
+        <div class="about-desc">
+            <strong>Full-Stack Developer !</strong> <br>
+            a a a ..... soon....
+        </div>
+    </div>
+    </main>
+    <h2>My Projects</h2>
+    <section class="project" id="projects">
+        <div class="card"><span>NO Thing For Now </span></div>
+        <div class="card"><span>NO Thing For Now </span></div>
+        <div class="card"><span>NO Thing For Now </span></div>
+        <div class="card"><span>NO Thing For Now </span></div>
+        <div class="card"><span>NO Thing For Now </span></div>
+        <div class="card"><span>NO Thing For Now </span></div>
+        <div class="card"><span>NO Thing For Now </span></div>
+        <div class="card"><span>NO Thing For Now </span></div>
+        <div class="card"><span>NO Thing For Now </span></div>
+        <div class="card"><span>NO Thing For Now </span></div>
+
+    </section>
+    <h2 id="content">Contact Me</h2>
+    <section class="content" id="content-form">
+      <div class="form-container">
+     <form>
+         <div class="header-wrapper">
+           <h2 class="text-content">Fill It</h2>
+          <span class="emoji-logic"></span>
+         </div>
+        <label for="text">Name
+         <input type="text" name="text" id="text" required/>
+        </label>
+        <label for="email">Email
+         <input type="email" id="email" name="email" required />
+        </label>
+          <label for="area">Requests 
+            <textarea id="area" name="area" required></textarea>
+          </label>
+      <button type="submit" >Submit</button>
+     </form>
+ </div>
+     <footer class="social-links">
+  <ul >
+    <li><a href="#">GitHub</a></li>
+    <li><a href="#">Youtube</a></li>
+    <li><a href="#">Linkedin</a></li>
+  </ul>
+</footer>
+    </section>
+
+    <h2><p class="gpp1"><span id="year"></span> S1dl Portfolio. All rights reserved.</p></h2>
+</body>
+
+<script>
+    // استهداف العنصر الذي يحمل المعرف year
+const Span = document.getElementById('year');
+
+// الحصول على السنة الحالية من نظام التشغيل
+const currentYear = new Date().getFullYear();
+
+// وضع السنة داخل العنصر
+Span.textContent = currentYear;
+
+</script>
+</html>
